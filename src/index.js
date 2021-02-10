@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 // personalized modules
 
 import Header from "./components/Header/Header";
+import Container from "./components/Container/Container";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<Container />
 		<Header />
 	</React.StrictMode>,
 	document.getElementById("root")
