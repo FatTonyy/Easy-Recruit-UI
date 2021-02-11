@@ -3,13 +3,23 @@ import "./HeaderStyles.scss";
 
 function Header() {
 	return (
-		<div>
-			<h2>damn you</h2>
-			<h1>damn you</h1>
-			<h1>damn you</h1>
-			<h1>damn you</h1>
-			<h1>damn you</h1>
-		</div>
+		<nav id="main-nav">
+			<div className="container">
+				<img src="../Images/logoeasy.png" className="logo" alt="company logo" />
+				<ul>
+					<li>
+						<a className="btn" href="https://www.google.com">
+							CV Writing
+						</a>{" "}
+					</li>
+					<li>
+						<a className="btn" href="https://www.google.com">
+							Home
+						</a>{" "}
+					</li>
+				</ul>
+			</div>
+		</nav>
 	);
 }
 
