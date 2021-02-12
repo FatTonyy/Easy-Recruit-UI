@@ -3,12 +3,7 @@ import React from "react";
 import "./ContainerStyles.scss";
 
 function Container() {
-	return (
-		<div>
-			{" "}
-			<h3>goodbye</h3>
-		</div>
-	);
+	return <div className="container"></div>;
 }
 
 export default Container;
