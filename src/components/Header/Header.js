@@ -8,7 +8,7 @@ function Header() {
 				<img src="../Images/logoeasy.png" className="logo" alt="company logo" />
 				<ul>
 					<li>
-						<a className="btn" href="https://www.google.com">
+						<a className="btn btn-1" href="https://www.google.com">
 							CV Writing
 						</a>{" "}
 					</li>
