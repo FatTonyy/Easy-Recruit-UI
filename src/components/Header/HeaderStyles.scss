@@ -3,6 +3,8 @@
 
 $color-primary: #ff551a;
 $color-secondary: #004660;
+$color-bg: #dae1eb;
+$color-text: #212529;
 
 .btn {
 	display: inline-block;
@@ -18,12 +20,12 @@ $color-secondary: #004660;
 }
 
 img {
-	width: 100%;
+	max-width: 80%;
 }
 
 #main-nav {
 	top: 0;
-	background: rgb(240, 236, 236);
+	background: $color-bg;
 	position: sticky;
 	z-index: 2;
 	margin-bottom: 60rem;
