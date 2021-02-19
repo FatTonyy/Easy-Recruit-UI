@@ -6,6 +6,7 @@ $color-secondary: #004660;
 $color-bg: #dae1eb;
 $color-text: #212529;
 
+//global styles
 .btn {
 	display: inline-block;
 	border: none;
@@ -15,42 +16,34 @@ $color-text: #212529;
 	border-radius: 50%;
 }
 
-.btn-1 {
-	margin-left: 1.75rem;
+// Header section
+.container {
+	width: 100%;
+	min-width: 120rem;
+	padding: 0 1.5rem;
+	margin: 0 auto;
 }
 
-img {
-	max-width: 80%;
-}
-
-#main-nav {
-	top: 0;
-	background: $color-bg;
-	position: sticky;
-	z-index: 2;
-	margin-bottom: 60rem;
-}
-
-#main-nav .container {
-	display: grid;
-	grid-template-columns: 6fr 2fr 1fr;
-	padding: 1rem;
-	align-items: center;
-}
-
-#main-nav .logo {
-	width: 1.8rem;
-}
-
-#main-nav ul {
-	justify-self: end;
+.header {
+	width: 100%;
+	height: 6rem;
 	display: flex;
-	flex-wrap: wrap;
-	flex: 1 1 40rem;
-	width: 60%;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: $color-bg;
+	z-index: 9;
 }
-#main-nav ul li a {
-	padding: 0.75rem;
-	margin: auto;
+
+// nav
+#main-nav {
+	background: $color-bg;
+	display: flex;
+	align-items: flex-end;
 	justify-content: space-between;
+}
+
+.logo img {
+	max-width: 80%;
 }
