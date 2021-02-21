@@ -1,20 +1,12 @@
 //Orange: #ff551a
 //Turquoise blue: #004660
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
 $color-primary: #ff551a;
 $color-secondary: #004660;
 $color-bg: #dae1eb;
 $color-text: #212529;
 
 //global styles
-.btn {
-	display: inline-block;
-	border: none;
-	background-color: $color-primary;
-	color: #fff;
-	padding: 0.5rem 1.5rem;
-	border-radius: 50%;
-}
 
 // Header section
 .container {
@@ -29,21 +21,83 @@ $color-text: #212529;
 	height: 6rem;
 	display: flex;
 	align-items: center;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	background-color: $color-bg;
 	z-index: 9;
 }
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+section {
+	padding: 5rem 0;
+}
 
 // nav
-#main-nav {
-	background: $color-bg;
+.nav {
+	// background: $color-bg;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
+}
+
+.logoh1 {
+	font-family: "Inter", sans-serif;
+	font-size: 2rem;
+	color: $color-primary;
+	font-weight: bold;
 }
 
 .logo img {
 	max-width: 80%;
+}
+
+.hamburger-menu {
+	font-size: 2.6rem;
+	color: $color-primary;
+	cursor: pointer;
+	position: relative;
+	z-index: 15;
+}
+
+.nav-list {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: $color-bg;
+	color: $color-text;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 12;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.5s;
+}
+
+.menu-open .nav-list {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.nav-item:not(:last-child) {
+	margin-bottom: 0.5rem;
+}
+.nav-link {
+	display: block;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 1rem;
 }
